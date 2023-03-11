@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// https://opentdb.com/api.php?amount=5&type=multiple
 
-function App() {
+import "./App.css";
+import { useState } from "react";
+
+import IntroPage from "./components/intro/IntroPage";
+import QuizQs from "./components/quiz/QuizQs";
+
+export default function App() {
+  const [showIntro, setShowIntro] = useState(true);
+  const [showQuiz, setShowQuiz] = useState(false);
+
+  function startQuiz() {
+    setShowIntro(false);
+    setShowQuiz(true)
+  }
+  function playAgain(){
+    setShowIntro(true);
+    setShowQuiz(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {showIntro && <div className="introPage">
+       <IntroPage startQuiz={startQuiz}/>
+      </div>}
+      
+        {showQuiz && 
+        <div className="quizPage">
+        <QuizQs
+        playAgain={playAgain} />
+        </div>}
+      
     </div>
   );
 }
-
-export default App;

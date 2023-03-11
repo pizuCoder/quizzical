@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #293264;
+    height: 30rem;
+    background-color: rgb(171, 171, 226);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.quizzical{
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #293264;
+    color: aliceblue;
+    border: none;
+    border-radius: .3rem;
+    /* margin-top: 2rem; */
+}
+@media only screen and (max-width: 600px){
+    .quizzical{
+        font-size: 3rem;
+    }
+}
