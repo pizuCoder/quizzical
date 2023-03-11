@@ -117,7 +117,7 @@ const Quiz = () => {
           <button 
             className="reset-quiz_cta"
             onClick={handleReset}
-          >Play again</button>
+          >Play Again</button>
         </div>
       }
     </>
