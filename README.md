@@ -6,7 +6,7 @@ This project was made based on design provided by a Scrimba solo project assignm
 A simple trivia based quiz app where the user gets 5 random quiz questions to answer. It's coded using react.
 
 ### How to play the game?
-1. click on this link 👉🏼 and it should lead you to the following page:
+1. click on this link 👉🏼 [Quizzical App](https://priya-quizzical.vercel.app/) and it should lead you to the following page:
 ![Screenshot 2023-03-11 at 3 26 27 PM](https://user-images.githubusercontent.com/102720207/224478218-fb407af2-47a0-40ad-8e2f-aadb8e530966.png)
 
 2. Click the 'Start Quiz' button which should lead you to the following page:
